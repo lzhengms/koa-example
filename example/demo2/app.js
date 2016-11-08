@@ -6,6 +6,11 @@ const app = new Koa()
 app.use(async (ctx, next) => {
     console.log(`${ctx.request.method} ${ctx.request.url}`); // 打印URL
     console.log('first')
+    const result = await new Promise((resolve, reject) => {
+      console.log('s')
+      resolve(false)
+    })
+    console.log('result', result)
     await next(); // 调用下一个middleware
     console.log('fifth')
 });
