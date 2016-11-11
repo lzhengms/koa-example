@@ -9,7 +9,8 @@
   "scripts": {
     "demo1": "node ./example/demo1/index.js",
     "demo2": "node ./example/demo2/index.js",
-    "demo3": "node ./example/demo3/index.js"
+    "demo3": "node ./example/demo3/index.js",
+    "maw": "node ./example/three-middleaware/index.js"
   },
   "dependencies": {
   },
@@ -23,7 +24,8 @@
     "koa-convert": "^1.2.0",
     "koa-json": "^1.1.1",
     "koa-static": "^2.0.0",
-    "koa-send": "^3.2.0"
+    "koa-send": "^3.2.0",
+    "co":"^4.6.0"
   },
   "engines": {
     "node": ">= 5.7.0",
