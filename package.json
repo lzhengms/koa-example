@@ -1,10 +1,10 @@
 {
-  "name": "admin",
-  "version": "3.1.0",
-  "description": "Social 管理系统",
+  "name": "koa-example",
+  "version": "1.0.0",
+  "description": "Koa2的example",
   "author": {
-    "name": "crossjs",
-    "email": "liwenfu@crossjs.com"
+    "name": "lzhengms",
+    "email": "lzhengms@gmail.com"
   },
   "scripts": {
     "demo1": "node ./example/demo1/index.js",

@@ -11,6 +11,7 @@ app.use(async (ctx, next) => {
      await next()
 });
 
+// common function
 app.use((ctx,next) => {
   console.log('common function')
   next()
