@@ -49,13 +49,15 @@ router.get('/json', async (ctx, next) => {
   ctx.body = {foo: 'bar'}
 })
 
-/*// 会重定向所有的路由到index.html文件
-app.use(convert(historyApiFallback()))*/
+// 会重定向所有的路由到index.html文件
+// app.use(convert(historyApiFallback()))
 
 // 把post请求的body设置在ctx.request.body上，应用这个中间的顺序要放在koa-router之上
 app.use(convert(bodyParser()))
 // 设置静态文件目录
-app.use(convert(json({pretty: false, param: 'pretty', spaces: 2})))
+app.use(convert(json()))
+// /json?pretty
+// app.use(convert(json({pretty: false, param: 'pretty', spaces: 2})))
 app.use(convert(staticServer('.')))
 app.use(router.routes())
 
